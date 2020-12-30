@@ -43,6 +43,9 @@ const game = () => {
   }
 }
 
-document.querySelector('button').onclick = () => {
-  game()
-}
+// const buttons = document.querySelectorAll('button')
+// buttons.forEach(button => {
+//   button.onclick(() => console.log(button.dataset.choice))
+// })
+
+// console.log([...buttons].map(button => button.dataset.choice))

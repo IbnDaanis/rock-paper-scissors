@@ -3,19 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Rock Paper Scissors</title>
   </head>
-
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 75vh;
-    }
-  </style>
   <body>
-    <button>Start</button>
+    <div class="container">
+      <div class="scores">
+        <h2 class="player">Your Score => <span>0</span></h2>
+        <h2 class="computer"><span>0</span> <= Opps Score</h2>
+      </div>
+      <div class="options">
+        <h3>Pick your options</h3>
+        <div class="choices">
+          <button data-choice="rock">Rock</button>
+          <button data-choice="paper">Paper</button>
+          <button data-choice="scissors">Scissors</button>
+        </div>
+      </div>
+      <div class="result">
+        <p id="result">The result</p>
+      </div>
+    </div>
+
     <script src="./app.js"></script>
   </body>
 </html>
