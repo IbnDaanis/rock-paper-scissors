@@ -61,3 +61,7 @@ const game = playerSelection => {
     resetButton.style.opacity = 1
   }
 }
+
+document.addEventListener('gesturestart', e => {
+  e.preventDefault()
+})

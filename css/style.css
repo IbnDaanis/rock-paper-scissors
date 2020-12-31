@@ -26,6 +26,12 @@ body {
   overflow-x: hidden;
 }
 
+@media (max-width: 600px) {
+  body {
+    overflow: hidden;
+  }
+}
+
 .roundDisplay {
   font-weight: 500;
   font-size: 3.5rem;
@@ -54,6 +60,12 @@ body {
   padding: 2rem 2rem 0;
 }
 
+@media (max-width: 600px) {
+  .container .scores {
+    padding: 1.5rem 1.5rem 0;
+  }
+}
+
 .container .scores div {
   border: 3px solid #920d39;
   border-radius: 10px;
@@ -72,10 +84,22 @@ body {
   background: #1d1d1d;
 }
 
+@media (max-width: 600px) {
+  .container .scores div {
+    height: 120px;
+  }
+}
+
 .container .scores div h2 {
   margin-top: 0.5rem;
   font-size: 1.2rem;
   font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  .container .scores div h2 {
+    font-size: 1rem;
+  }
 }
 
 .container .scores div h3 {
@@ -83,6 +107,12 @@ body {
   text-align: center;
   font-size: 3rem;
   font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .container .scores div h3 {
+    font-size: 2rem;
+  }
 }
 
 .container .options {
@@ -106,6 +136,13 @@ body {
   font-weight: 400;
   font-size: 2.5rem;
   padding: 1rem 1rem 2rem;
+}
+
+@media (max-width: 600px) {
+  .container .options h3 {
+    font-size: 2rem;
+    padding: 0.7rem 0.8rem 1.6rem;
+  }
 }
 
 .container .options .choices {
@@ -139,6 +176,13 @@ body {
   cursor: pointer;
   -webkit-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .container .options .choices .choice {
+    font-size: 2rem;
+    padding: 6px 12px;
+  }
 }
 
 .container .options .choices .choice:hover {
@@ -188,16 +232,33 @@ body {
   text-align: center;
 }
 
+@media (max-width: 600px) {
+  .container .result .resultDisplay {
+    font-size: 1rem;
+  }
+}
+
 .container .result .resultDisplay.winner {
   font-weight: 500;
   color: #00a300;
   font-size: 1.5rem;
 }
 
+@media (max-width: 600px) {
+  .container .result .resultDisplay.winner {
+    font-size: 1.3rem;
+  }
+}
+
 .container .result .resultDisplay.loser {
   font-weight: 500;
   color: #af0000;
-  font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .container .result .resultDisplay.loser {
+    font-size: 1.2rem;
+  }
 }
 
 .reset {
@@ -216,6 +277,14 @@ body {
   font-size: 1.6rem;
   -webkit-transition: background 0.2s ease-in-out, opacity 0.5s ease-in-out;
   transition: background 0.2s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .reset {
+    margin-top: 1.5rem;
+    padding: 12px 26px;
+    font-size: 1.3rem;
+  }
 }
 
 .reset:hover {
