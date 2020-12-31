@@ -41,16 +41,42 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 2rem 2rem 0;
+}
+
+.container .scores div {
+  border: 2px solid #920d39;
+  border-radius: 10px;
+  width: 45%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2rem 2rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1d1d1d;
 }
 
-.container .scores h2 {
+.container .scores div h2 {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  padding-bottom: 0.3rem;
+}
+
+.container .scores div h3 {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 .container .options {

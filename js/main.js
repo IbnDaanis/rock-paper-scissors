@@ -1,5 +1,5 @@
-const playerScoreDisplay = document.querySelector('.player span')
-const computerScoreDisplay = document.querySelector('.computer span')
+const playerScoreDisplay = document.querySelector('#playerScoreDisplay')
+const computerScoreDisplay = document.querySelector('#computerScoreDisplay')
 const resultDisplay = document.querySelector('#resultDisplay')
 const buttons = [...document.querySelectorAll('.choices button')]
 const resetButton = document.querySelector('#reset')

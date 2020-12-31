@@ -6,6 +6,8 @@
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+$main-color: #920d39;
+
 body {
   display: flex;
   justify-content: center;
@@ -21,16 +23,33 @@ body {
   width: 500px;
   max-width: 95%;
   margin: 0 auto;
-  background: rgb(39, 39, 39);
+  background: #272727;
   border-radius: 10px;
   .scores {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
     padding: 2rem 2rem 0;
-    h2 {
-      font-weight: 400;
-      padding-bottom: 0.3rem;
+    div {
+      border: 2px solid $main-color;
+      border-radius: 10px;
+      width: 45%;
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgb(29, 29, 29);
+      h2 {
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+      h3 {
+        margin-top: 1.5rem;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 600;
+      }
     }
   }
   .options {
