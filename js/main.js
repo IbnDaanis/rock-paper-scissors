@@ -1,3 +1,4 @@
+const roundDisplay = document.querySelector('#roundDisplay')
 const playerScoreDisplay = document.querySelector('#playerScoreDisplay')
 const computerScoreDisplay = document.querySelector('#computerScoreDisplay')
 const resultDisplay = document.querySelector('#resultDisplay')
