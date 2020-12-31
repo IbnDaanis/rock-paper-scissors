@@ -11,4 +11,4 @@
 - You can reset the game after it has finished.
 - It's mobile friendly
 
-!(./images/preview.png)
+![Preview](./images/preview.png)
