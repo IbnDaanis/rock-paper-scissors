@@ -1,9 +1,5 @@
 # Rock Paper Scissors
 
-Rock Paper Scissors
-
-## Project: Rock Paper Scissors
-
 🔗 **Live preview** of the game is [here](https://ibndaanis.github.io/rock-paper-scissors/).
 
 ### Features of this Game:
@@ -14,3 +10,5 @@ Rock Paper Scissors
 - Whoever reaches five points first wins.
 - You can reset the game after it has finished.
 - It's mobile friendly
+
+!(./images/preview.png)
