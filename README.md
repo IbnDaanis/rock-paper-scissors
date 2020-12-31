@@ -1,6 +1,6 @@
 # Rock Paper Scissors
 
-## **Check out** the game [here](https://ibndaanis.github.io/rock-paper-scissors/)
+**Check out** the game [here](https://ibndaanis.github.io/rock-paper-scissors/)
 
 ### Features of this Game:
 
@@ -11,6 +11,6 @@
 - You can reset the game after it has finished.
 - It's mobile friendly
 
-### Preview:
+## Preview:
 
 ![Preview](./images/preview.png)
