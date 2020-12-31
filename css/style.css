@@ -21,7 +21,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 75vh;
   background: #181818;
   color: white;
   overflow-x: hidden;
@@ -30,7 +29,7 @@ body {
 .roundDisplay {
   font-weight: 500;
   font-size: 3.5rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .container {
@@ -56,7 +55,7 @@ body {
 }
 
 .container .scores div {
-  border: 2px solid #920d39;
+  border: 3px solid #920d39;
   border-radius: 10px;
   width: 45%;
   height: 150px;
@@ -104,7 +103,7 @@ body {
 }
 
 .container .options h3 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 2.5rem;
   padding: 1rem 1rem 2rem;
 }
@@ -120,9 +119,17 @@ body {
           justify-content: space-between;
 }
 
-.container .options .choices button {
-  outline: none;
-  border: 0;
+.container .options .choices .choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100px;
   padding: 8px 16px;
   background: #bd1049;
@@ -130,25 +137,35 @@ body {
   border: 1px solid #bd1049;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 1rem;
   -webkit-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
 }
 
-.container .options .choices button:hover {
+.container .options .choices .choice:hover {
   background: #920d39;
   border: 1px solid #920d39;
 }
 
-.container .options .choices button:active {
+.container .options .choices .choice:active {
   -webkit-transform: translateY(1px);
           transform: translateY(1px);
   border: 1px solid #ff1765;
 }
 
-.container .options .choices button.disabled {
+.container .options .choices .choice.disabled {
   -webkit-filter: brightness(0.6);
           filter: brightness(0.6);
+  pointer-events: none;
+}
+
+.container .options .choices .choice i {
+  font-size: 2rem;
+  padding: 1rem;
+  pointer-events: none;
+}
+
+.container .options .choices .choice p {
+  font-size: 1.2rem;
   pointer-events: none;
 }
 

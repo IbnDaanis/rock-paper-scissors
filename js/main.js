@@ -2,17 +2,18 @@ const roundDisplay = document.querySelector('#roundDisplay')
 const playerScoreDisplay = document.querySelector('#playerScoreDisplay')
 const computerScoreDisplay = document.querySelector('#computerScoreDisplay')
 const resultDisplay = document.querySelector('#resultDisplay')
-const buttons = [...document.querySelectorAll('.choices button')]
+const optionDisplay = document.querySelector('#optionDisplay')
+const choices = [...document.querySelectorAll('.choices #choice')]
 const resetButton = document.querySelector('#reset')
 
-const disableButtons = trueOrFalse => {
-  buttons.forEach(button => {
+const disableChoices = trueOrFalse => {
+  choices.forEach(button => {
     button.disabled = trueOrFalse
     button.classList.toggle('disabled')
   })
 }
 
-buttons.forEach(button =>
+choices.forEach(button =>
   button.addEventListener('click', e => {
     const playerSelection = e.target.dataset.choice
     game(playerSelection)
@@ -20,11 +21,14 @@ buttons.forEach(button =>
 )
 
 const resetGame = () => {
+  roundDisplay.innerHTML = 'Round <span>1</span>'
+  optionDisplay.textContent = 'Pick your option'
   playerScore = 0
   computerScore = 0
+  round = 0
   resultDisplay.textContent = 'Start the game!'
   resultDisplay.classList.remove('winner', 'loser')
-  disableButtons(false)
+  disableChoices(false)
 
   playerScoreDisplay.textContent = playerScore
   computerScoreDisplay.textContent = computerScore

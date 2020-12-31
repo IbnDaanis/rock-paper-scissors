@@ -44,17 +44,19 @@ const game = playerSelection => {
 
   if (playerScore === 5) {
     roundDisplay.textContent = 'Game Over!'
+    optionDisplay.textContent = 'Winner!'
     resultDisplay.textContent = 'You reached 5 points and won the game!'
     resultDisplay.classList.add('winner')
-    disableButtons(true)
+    disableChoices(true)
     resetButton.style.visibility = 'visible'
     resetButton.style.opacity = 1
   } else if (computerScore === 5) {
     roundDisplay.textContent = 'Game Over!'
+    optionDisplay.textContent = 'Loser!'
     resultDisplay.textContent =
       'You lost, the computer reached 5 points and won the game!'
     resultDisplay.classList.add('loser')
-    disableButtons(true)
+    disableChoices(true)
     resetButton.style.visibility = 'visible'
     resetButton.style.opacity = 1
   }
