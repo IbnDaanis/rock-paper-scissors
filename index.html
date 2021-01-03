@@ -15,7 +15,8 @@
   <body>
     <h1 class="roundDisplay" id="roundDisplay">Round <span>1</span></h1>
     <div class="container">
-      <div class="scores">
+      <!-- Scores -->
+      <section class="scores">
         <div class="player">
           <h2><i class="fas fa-user"></i> You</h2>
           <h3 id="playerScoreDisplay">0</h3>
@@ -24,8 +25,9 @@
           <h2><i class="fas fa-laptop-code"></i> Computer</h2>
           <h3 id="computerScoreDisplay">0</h3>
         </div>
-      </div>
-      <div class="options">
+      </section>
+      <!-- Options -->
+      <section class="options">
         <h3 id="optionDisplay">Pick your option</h3>
         <div class="choices">
           <div id="choice" class="choice" data-choice="rock">
@@ -41,14 +43,16 @@
             <p>Scissors</p>
           </div>
         </div>
-      </div>
-      <div class="result">
+      </section>
+      <!-- Result -->
+      <section class="result">
         <p id="resultDisplay" class="resultDisplay">
           Start the game! First to 5 wins
         </p>
-      </div>
+      </section>
     </div>
     <button id="reset" class="reset">Reset</button>
+
     <script src="./scripts/game.js"></script>
     <script src="./scripts/main.js"></script>
   </body>
