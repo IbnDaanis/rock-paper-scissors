@@ -29,6 +29,16 @@ const playRound = (playerSelection, computerSelection) => {
   }
 }
 
+const encouragementPhrases = [
+  'Go on!',
+  'You can do this',
+  'Beat the AI already!',
+  'You better not lose to a computer',
+  'Okay, this game is random',
+  'No skill required but yeah',
+  "Let's go!",
+]
+
 const game = playerSelection => {
   const result = playRound(playerSelection, computerPlay())
   if (result.includes('lost')) {
@@ -37,7 +47,6 @@ const game = playerSelection => {
     playerScore++
   }
 
-  roundDisplay.querySelector('span').textContent = round
   playerScoreDisplay.textContent = playerScore
   computerScoreDisplay.textContent = computerScore
   resultDisplay.textContent = result
@@ -59,5 +68,15 @@ const game = playerSelection => {
     disableChoices(true)
     resetButton.style.visibility = 'visible'
     resetButton.style.opacity = 1
+  } else if (playerScore < 5 && computerScore < 5) {
+    setTimeout(() => {
+      roundDisplay.querySelector('span').textContent = round
+      resultDisplay.textContent =
+        encouragementPhrases[
+          Math.floor(Math.random() * encouragementPhrases.length)
+        ]
+      disableChoices(true)
+    }, 2000)
+    disableChoices(false)
   }
 }
