@@ -13,11 +13,12 @@ const disableChoices = trueOrFalse => {
   })
 }
 
-choices.forEach(button =>
-  button.addEventListener('click', e => {
-    const playerSelection = e.target.dataset.choice
-    game(playerSelection)
-  })
+choices.forEach(
+  button =>
+    (button.onclick = ({ target }) => {
+      const playerSelection = target.dataset.choice
+      game(playerSelection)
+    })
 )
 
 const resetGame = () => {
@@ -37,6 +38,4 @@ const resetGame = () => {
   resetButton.style.opacity = 0
 }
 
-resetButton.addEventListener('click', () => {
-  resetGame()
-})
+resetButton.onclick = () => resetGame()

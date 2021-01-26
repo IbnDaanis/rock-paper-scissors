@@ -76,7 +76,7 @@ const game = playerSelection => {
           Math.floor(Math.random() * encouragementPhrases.length)
         ]
       disableChoices(true)
-    }, 2000)
+    }, 1000)
     disableChoices(false)
   }
 }
